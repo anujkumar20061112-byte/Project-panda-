@@ -1,38 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy 2nd Anniversary ❤️</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Panda ❤️</title>
+
+<style>
+body{
+margin:0;
+padding:0;
+background:#111;
+color:white;
+font-family:Arial,sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+text-align:center;
+}
+
+.container{
+max-width:600px;
+padding:20px;
+}
+
+h1{
+font-size:40px;
+color:#ff4d6d;
+margin-bottom:10px;
+}
+
+h2{
+font-size:22px;
+font-weight:normal;
+margin-bottom:30px;
+}
+
+button{
+background:#ff4d6d;
+color:white;
+border:none;
+padding:14px 28px;
+font-size:18px;
+border-radius:30px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+#memory{
+margin-top:25px;
+font-size:20px;
+opacity:0;
+transition:opacity 1s;
+}
+
+#memory.show{
+opacity:1;
+}
+</style>
 </head>
-<body style="margin:0;background:#000;color:white;font-family:Arial;text-align:center;padding-top:100px;">
 
-<h1> ❤️ ITS OUR 2ND ANNIVERSARY BABE ❤️</h1>
+<body>
 
-<h2> Happy 2nd Anniversary</h2>
+<div class="container">
+<h1>Happy 2nd Anniversary ❤️</h1>
 
-<p> 26 July — Our little forever 🐼 </p>
+<h2>
+26 July — Our Little Forever 🐼<br>
+This is just the beginning of our story...
+</h2>
 
-<p> This is just the beginning of our story... </p>
-
-</body>
-</html>
-<button onclick="showMessage()">Open Our Memories 💌</button>
+<button onclick="showMessage()">
+Open Our Memories 💌
+</button>
 
 <p id="memory"></p>
 
+</div>
+
 <script>
-function showMessage() {
-  document.getElementById("memory").classList.add("show");
- 
-  "Two years of smiles, fights, memories and moments ❤️<br>And this is just the beginning 🐼";
+function showMessage(){
+const m=document.getElementById("memory");
+m.innerHTML="Two years of smiles, fights, memories and moments ❤️<br>And this is just the beginning... Forever, Panda 🐼";
+m.classList.add("show");
 }
 </script>
-<script>
-function showMessage() {
-  document.getElementById("memory").innerHTML =
-  "Two years of smiles, fights, memories and moments ❤️<br>And this is just the beginning 🐼";
-} 
-  
 
-</script>
+</body>
+</html>
