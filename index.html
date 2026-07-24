@@ -23,7 +23,16 @@
 
 <script>
 function showMessage() {
-  document.getElementById("memory").innerHTML =
+  document.getElementById("memory").classList.add("show");
+ 
   "Two years of smiles, fights, memories and moments ❤️<br>And this is just the beginning 🐼";
 }
 </script>
+#memory {
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+#memory.show {
+  opacity: 1;
+} 
