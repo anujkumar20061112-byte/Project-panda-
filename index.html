@@ -3,77 +3,62 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Project Panda ❤️</title>
+<title>Happy 2nd Anniversary ❤️</title>
 
 <style>
 body{
 margin:0;
 padding:0;
 background:linear-gradient(135deg,#0f0f0f,#1a1a2e,#16213e);
-color:white;
 font-family:Arial,sans-serif;
+color:white;
 display:flex;
 justify-content:center;
 align-items:center;
-height:100vh;
-text-align:center;
+min-height:100vh;
 }
 
 .container{
-max-width:600px;
+width:90%;
+max-width:800px;
+background:rgba(255,255,255,.05);
 padding:30px;
-background:rgba(255,255,255,0.05);
 border-radius:20px;
-backdrop-filter:blur(8px);
-border:1px solid rgba(255,255,255,0.1);
-box-shadow:0 0 25px rgba(0,0,0,.5);
+box-shadow:0 0 30px rgba(0,0,0,.5);
 }
 
 h1{
-font-size:42px;
+text-align:center;
 color:#ff4d6d;
-text-shadow:0 0 15px rgba(255,77,109,.7);
-margin-bottom:10px;
+font-size:40px;
+text-shadow:0 0 15px #ff4d6d;
 }
 
-<h2 style="line-height:1.8;color:#f5f5f5;">
-26 July ❤️<br><br>
-
-Two years...<br>
-Countless memories...<br>
-Infinite love... ♾️❤️<br><br>
-
-No matter where life takes us,<br>
-I'll always choose you.<br><br>
-
-Forever Yours,<br>
-<b>Your Panda 🐼❤️</b>
-</h2>
+.subtitle{
+text-align:center;
+font-size:20px;
+line-height:1.8;
+margin-top:20px;
+}
 
 button{
+display:block;
+margin:30px auto;
+padding:15px 35px;
+font-size:18px;
+border:none;
+border-radius:30px;
 background:#ff4d6d;
 color:white;
-border:none;
-padding:14px 28px;
-font-size:18px;
-border-radius:30px;
 cursor:pointer;
-transition:.3s;
-}
-
-button:hover{
-transform:scale(1.05);
 }
 
 #memory{
-margin-top:25px;
-font-size:20px;
-opacity:0;
-transition:opacity 1s;
-}
-
-#memory.show{
-opacity:1;
+display:none;
+font-size:18px;
+line-height:2;
+white-space:pre-line;
+margin-top:30px;
 }
 </style>
 </head>
@@ -81,28 +66,176 @@ opacity:1;
 <body>
 
 <div class="container">
-<h1>Happy 2nd Anniversary ❤️</h1>
 
-<h2>
-26 July — Our Little Forever 🐼<br>
-This is just the beginning of our story...
-</h2>
+<h1>❤️ Happy 2nd Anniversary ❤️</h1>
+
+<div class="subtitle">
+26 July ❤️<br><br>
+Two Years...<br>
+Countless Memories...<br>
+Infinite Love... ♾️❤️
+</div>
 
 <button onclick="showMessage()">
-Open Our Memories 💌
+Read My Letter 💌
 </button>
 
-<p id="memory"></p>
-
-</div>
+<div id="memory"></div>
 
 <script>
 function showMessage(){
-const m=document.getElementById("memory");
-m.innerHTML="Two years of smiles, fights, memories and moments ❤️<br>And this is just the beginning... Forever, Panda 🐼";
-m.classList.add("show");
+
+document.getElementById("memory").style.display="block";
+
+document.getElementById("memory").innerHTML=`
+<h2 style="text-align:center;color:#ffb6c1;">
+Happy 2nd Anniversary, Meri Panda ❤️
+</h2>
+
+<p>
+
+Aaj 26 July hai... aur aaj se exactly 2 saal pehle ek random Telegram GC mein ek random message ne meri zindagi ka sabse special chapter shuru kar diya tha.
+
+Sach kahun to us din bilkul bhi nahi socha tha ki jis insaan se bas yun hi baat shuru hui hai, wahi ek din meri duniya ban jayegi.
+
+Yaad hai tumhari woh fake ID? 😂
+Jab tumne bola tha...
+
+"Really bolu... I am girl."
+
+Aur mujhe bilkul yakeen hi nahi hua tha.
+
+Shayad us waqt hum dono ko bhi nahi pata tha ki ye chhoti si baat ek itni badi kahani ban jayegi.
+
+Humne "I love you" se shuruaat nahi ki thi.
+
+Pehle 💙
+Phir 🖤
+Phir 💛
+Aur aaj ❤️
+
+Shayad isi liye hamara pyaar words se pehle feelings mein bada hua.
+
+15 August...
+Woh din main kabhi nahi bhool sakta.
+
+Pura din baatein...
+Aur usi din hum itne close ho gaye.
+
+Maine tumhe pehli baar dekha tha...
+Chahe tumne apna face chhupa rakha tha.
+
+Lekin pata hai?
+
+Kabhi-kabhi kisi ko dekhne se pehle usse mehsoos karna zyada khoobsurat hota hai.
+Hamari journey perfect kabhi nahi thi.
+
+Fights hui...
+Misunderstandings hui...
+Kabhi dono ziddi bane...
+
+Lekin har baar humne ek dusre ko phir se choose kiya.
+
+Shayad isi ka naam pyaar hai. ❤️
+
+Aur hamari real memories...
+
+Station par ghanton wait karna...
+
+Aur ek baar jaan-boojhkar train chhod dena sirf isliye ki tumhare saath ek aur din mil jaye...
+
+Ek plate mein aloo paratha khana...
+
+Tumhare haath se mithai khana...
+
+Saath mein Ludo aur Chess khelna...
+
+Aur woh "nakli hug" jo technically hug nahi tha...
+Lekin mere liye duniya ke sabse kareeb palon mein se ek tha. ❤️
+
+Aur tumhari woh aadat...
+
+Achanak 20–25 messages mein sirf...
+
+"Babe...
+Babe...
+Babe..." 😂❤️
+
+Har baar padhkar bina wajah smile aa jaati hai.
+
+Lekin ek aadat aur hai...
+
+Jab hum saath chalte hain...
+
+Tum hamesha road ki us side chalti ho jahan se gaadiyan aati hain...
+
+Sirf isliye ki mujhe kuch na ho.
+
+Log kehte hain pyaar bade-bade waadon mein hota hai.
+
+Mujhe lagta hai pyaar...
+
+Aise chhote-chhote khayalon mein chhupa hota hai. ❤️
+Aur pata hai mujhe sabse zyada kya pasand hai?
+
+Tumse chat karna nahi...
+Tumse call karna bhi nahi...
+
+Mujhe sabse zyada pasand hai...
+
+Tumhare saamne baithkar tumhari baatein sunna...
+Tumhare expressions dekhna...
+Aur woh ehsaas ki tum mere paas ho. ❤️
+
+5 December 2024...
+Woh din bhi meri zindagi ka hamesha special rahega.
+
+Aaj 2 saal baad...
+
+Meri ek hi dua hai...
+
+Bas hum isi tarah saath rahein.
+
+Har mushkil mein ek dusre ka haath pakadkar chal sakein.
+
+Aur ek din woh future sirf sapna na rahe...
+
+Jiske baare mein hum roz baat karte hain.
+
+Aur haan...
+
+Agar kabhi hamari ek chhoti si beti hui...
+
+To uska naam Tanvi hi rakhenge. 🤍
+
+Thank you, Panda...
+
+Meri zindagi mein aane ke liye.
+
+Mujhe itna pyaar dene ke liye.
+
+Aur har din mujhe ye ehsaas dilane ke liye...
+
+Ki sahi insaan mil jaaye,
+
+To ek random Telegram message bhi taqdeer ban sakta hai.
+
+❤️ Happy 2nd Anniversary, Meri Panda ❤️
+
+I love you.
+
+Aaj bhi.
+Kal bhi.
+Aur har us kal mein...
+Jahan tum mere saath ho. ♾️🐼
+
+</p>
+`;
+
 }
 </script>
+
+</div>
 
 </body>
 </html>
